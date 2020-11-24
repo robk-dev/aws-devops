@@ -1,4 +1,0 @@
-{
-  "httpMethod": "POST",
-  "body": "{ \"TableName\": \"things\",\"Item\": {\"thingid\": \"lambdatest\"}}"
-}

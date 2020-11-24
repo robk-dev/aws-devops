@@ -55,7 +55,7 @@
 
     items.map( item => {
       const el = document.createElement('div')
-      el.innerHTML = item.thingid
+      el.innerHTML = item.itemid
       Items.appendChild(el)
     })
 
@@ -116,7 +116,7 @@
     const payload = {
       TableName: table,
       Item: {
-        thingid: item
+        itemid: item
       }
     }
 
@@ -139,7 +139,7 @@
 
     Button.addClass('is-loading')
 
-    addItem(Form.TableName.value, Form.thingid.value)
+    addItem(Form.TableName.value, Form.itemid.value)
       // Success!
       .then( () => {
         // Reload items in the list
@@ -149,8 +149,8 @@
           })
           // Ready UI for next submission
           .then( () => {
-            Form.thingid.value = ''
-            Form.thingid.focus()
+            Form.itemid.value = ''
+            Form.itemid.focus()
           })
       })
       .catch( renderError )

@@ -1,6 +1,6 @@
 {
-  "TableName": "things",
+  "TableName": "items",
   "Item" : {
-      "thingid": "apitest"
+      "itemid": "apitest"
     }
 }
